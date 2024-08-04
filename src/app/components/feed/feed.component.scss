@@ -9,30 +9,111 @@
     width: calc(100% - 33rem);
     padding: 1rem;
     margin: 1rem;
-    position: fixed;
-    border: 0.1rem dotted red;
-    overflow: scroll;
+    overflow-y: auto;
+    height: 92.5vh;
+    position: absolute;
+    
+    .tx {
+        font-size: 1.15rem;
+    }
 
     .feed-content {
-        // background-color: cyan;
-        border: 0.1rem dotted blue;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: start;
-        gap:1rem;
+        gap: 1rem;
         width: 100%;
     }
 
+    .section {
+        width: 100%;
+
+        .grid {
+            gap: 1rem;
+            box-sizing: border-box;
+            display: grid;
+            transition: ease-in-out 0.2s all;
+        }
+
+        .grid#primary {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .grid#secondary {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+
+        .tile {
+            aspect-ratio: 1 / 1;
+            overflow: hidden;
+            border: 1px solid rgba($color: #888, $alpha: 0.5);
+            border-radius: 2rem;
+            transition: ease-in-out 0.2s all;
+            cursor: pointer;
+
+            .tile-content {
+                padding: 1rem;
+                overflow-y: hidden;
+                aspect-ratio: 1 / 1;
+            }
+        }
+
+
+        .tile:hover {
+            transform: scale(1.02);
+            box-shadow: 0 0 0.75rem rgba($color: #888, $alpha: 0.25);
+        }
+
+        @media screen and (max-width: 1080px) {
+            .grid#primary {
+                grid-template-columns: 1fr;
+            }
+
+            .grid#secondary {
+                grid-template-columns: 1fr 1fr;
+            }
+
+        }
+
+        @media screen and (max-width: 991px) {
+            .grid#primary {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .grid#secondary {
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+            }
+
+        }
+
+        @media screen and (max-width: 767px) {
+            .grid#primary {
+                grid-template-columns: 1fr;
+            }
+
+            .grid#secondary {
+                grid-template-columns: 1fr 1fr;
+            }
+
+        }
+    }
+
+
+
 }
+
+
 
 @media screen and (max-width: 991px) {
     .feed {
         align-items: center;
-        justify-content: center;
+        justify-content: start;
         padding: 1rem;
         margin: 1rem;
         position: unset;
         width: unset;
+        height: 100%;
     }
 }
+

@@ -1,4 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
+import { SharedService } from '../../services/shared.service';
 
 @Component({
   selector: 'app-header-bar',
@@ -7,12 +8,13 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 })
 export class HeaderBarComponent implements OnInit, OnDestroy {
   today: Date = new Date();
-  yearOfExperience: number = this.today.getFullYear() - 2018;
+  yearOfExperience?: number;
   private intervalId: any;
 
-  constructor() { }
+  constructor(private sharedService: SharedService) { }
 
   ngOnInit(): void { 
+    this.yearOfExperience = this.sharedService.setYearOfExperience();
     this.updateTime();
     this.intervalId = setInterval(
       () => {
