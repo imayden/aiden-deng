@@ -1,0 +1,110 @@
+/* src/styles/themes.scss */
+:root {
+    --transition: ease-in-out all 0.2s;
+    --border-radius: 0.75rem;
+    --padding: 0.9rem;
+    --margin: 0.5rem;
+  }
+  
+  /* Dark Theme */
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #111111;
+      color: #ffffff;
+      transition: var(--transition);
+    }
+  
+    h1, h2, h3, h4, h5, h6 {
+      color: #ffffff;
+    }
+  
+    p {
+      color: rgba(255, 255, 255, 0.5);
+    }
+  
+    .btn-primary {
+      color: rgba(0, 0, 0, 0.9);
+      background-color: rgba(225, 225, 225, 0.9);
+      border: none;
+      padding: var(--padding);
+      margin: var(--margin);
+      border-radius: var(--border-radius);
+      transition: var(--transition);
+      cursor: pointer;
+    }
+  
+    .btn-primary:hover {
+      color: rgba(0, 0, 0, 1);
+      background-color: rgba(225, 225, 225, 1);
+      transform: scale(1.04);
+    }
+  
+    .btn-secondary {
+      color: rgba(225, 225, 225, 0.5);
+      background-color: transparent;
+      border: none;
+      padding: var(--padding);
+      margin: var(--margin);
+      border-radius: var(--border-radius);
+      transition: var(--transition);
+      cursor: pointer;
+    }
+  
+    .btn-secondary:hover {
+      color: rgba(225, 225, 225, 1);
+      background-color: rgba(225, 225, 225, 0.15);
+      transform: scale(1.04);
+    }
+  }
+  
+  /* Light Theme */
+  @media (prefers-color-scheme: light), (prefers-color-scheme: no-preference) {
+    body {
+      background-color: #ffffff;
+      color: #111111;
+      transition: var(--transition);
+    }
+  
+    h1, h2, h3, h4, h5, h6 {
+      color: #000000;
+    }
+  
+    p {
+      color: rgba(0, 0, 0, 0.5);
+    }
+  
+    .btn-primary {
+      color: rgba(225, 225, 225, 0.9);
+      background-color: rgba(0, 0, 0, 0.9);
+      border: none;
+      padding: var(--padding);
+      margin: var(--margin);
+      border-radius: var(--border-radius);
+      transition: var(--transition);
+      cursor: pointer;
+    }
+  
+    .btn-primary:hover {
+      color: rgba(225, 225, 225, 1);
+      background-color: rgba(0, 0, 0, 1);
+      transform: scale(1.04);
+    }
+  
+    .btn-secondary {
+      color: rgba(0, 0, 0, 0.5);
+      background-color: transparent;
+      border: none;
+      padding: var(--padding);
+      margin: var(--margin);
+      border-radius: var(--border-radius);
+      transition: var(--transition);
+      cursor: pointer;
+    }
+  
+    .btn-secondary:hover {
+      color: rgba(0, 0, 0, 0.75);
+      background-color: rgba(0, 0, 0, 0.1);
+      transform: scale(1.04);
+    }
+  }
+  
