@@ -14,8 +14,25 @@
     display: flex;
     flex-direction: column;
     align-items: start;
-    justify-content: start;
+    justify-content: space-between;
     padding: 0.5rem;
+    height: 90vh;
+
+    .heading-content {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        // padding: 0.5rem;
+    }
+
+    .bottom-content {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        // padding: 0.5rem;
+    }
 
     .avatar-container {
         display: flex;
@@ -34,21 +51,30 @@
         .avatar {
             min-width: 12rem;
             min-height: 12rem;
-            transform: scale(1.05);
+            transform: scale(1.01);
             width: 12rem;
             height: 12rem;
             background-size: cover;
             overflow: hidden;
+            transition: ease-in-out 0.2s;
             background-image: url('https://raw.githubusercontent.com/imayden/Images-cdn-repo/main/aiden-deng/avatars/light-square.png');
+        }
+
+        .avatar:hover {
+            transform: scale(1.1);
+            background-image: url('https://raw.githubusercontent.com/imayden/Images-cdn-repo/main/aiden-deng/avatars/light-greetings-square.png');
         }
 
         @media (prefers-color-scheme: dark) {
             .avatar {
                 background-image: url('https://raw.githubusercontent.com/imayden/Images-cdn-repo/main/aiden-deng/avatars/dark-square.png');
             }
+
+            .avatar:hover {
+                background-image: url('https://raw.githubusercontent.com/imayden/Images-cdn-repo/main/aiden-deng/avatars/dark-greetings-square.png');
+            }
         }
     }
-
 
     .info-container {
         text-align: start;
@@ -59,7 +85,7 @@
             margin-top: 1.5rem;
             margin-bottom: 0;
         }
-    
+
         .tag {
             font-size: 1.2rem;
             margin-block: 0.5rem;
@@ -68,19 +94,21 @@
     }
 
     .actions {
-        display: flex;
-        flex-direction: row;
-        align-items: start;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.5rem;
+        padding: 1.5rem;
         margin-top: 1rem;
-        gap: 1rem;
-        
+        padding: 0;
+        width: 100%;
+
         a {
             text-decoration: none;
+            text-align: center;
         }
     }
 
-    .contact-info{
+    .contact-info {
         display: flex;
         flex-direction: column;
         align-items: start;
@@ -98,6 +126,28 @@
 
         .info-container {
             text-align: center;
+        }
+
+        .actions {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+
+            a {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: center;
+            margin-top: 1rem;
+            gap: 0;
         }
     }
 }
