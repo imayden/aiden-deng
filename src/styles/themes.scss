@@ -1,9 +1,9 @@
 /* src/styles/themes.scss */
 :root {
     --transition: ease-in-out all 0.2s;
-    --border-radius: 0.75rem;
-    --padding: 0.9rem;
-    --margin: 0.5rem;
+    --border-radius: 0rem;
+    --padding: 0rem;
+    --margin: 0rem;
   }
   
   /* Dark Theme */
@@ -26,9 +26,9 @@
       color: rgba(0, 0, 0, 0.9);
       background-color: rgba(225, 225, 225, 0.9);
       border: none;
-      padding: var(--padding);
-      margin: var(--margin);
-      border-radius: var(--border-radius);
+      padding: 0.9rem;
+      margin: 0.5rem;
+      border-radius: 0.75rem;
       transition: var(--transition);
       cursor: pointer;
     }
@@ -43,9 +43,9 @@
       color: rgba(225, 225, 225, 0.5);
       background-color: transparent;
       border: none;
-      padding: var(--padding);
-      margin: var(--margin);
-      border-radius: var(--border-radius);
+      padding: 0.9rem;
+      margin: 0.5rem;
+      border-radius: 0.75rem;
       transition: var(--transition);
       cursor: pointer;
     }
@@ -77,9 +77,9 @@
       color: rgba(225, 225, 225, 0.9);
       background-color: rgba(0, 0, 0, 0.9);
       border: none;
-      padding: var(--padding);
-      margin: var(--margin);
-      border-radius: var(--border-radius);
+      padding: 0.9rem;
+      margin: 0.5rem;
+      border-radius: 0.75rem;
       transition: var(--transition);
       cursor: pointer;
     }
@@ -94,9 +94,9 @@
       color: rgba(0, 0, 0, 0.5);
       background-color: transparent;
       border: none;
-      padding: var(--padding);
-      margin: var(--margin);
-      border-radius: var(--border-radius);
+      padding: 0.9rem;
+      margin: 0.5rem;
+      border-radius: 0.75rem;
       transition: var(--transition);
       cursor: pointer;
     }
