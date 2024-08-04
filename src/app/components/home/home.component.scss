@@ -1,8 +1,10 @@
+
 .home {
     display: grid;
-    grid-template-columns: 1fr 2.5fr;
-    gap: 0.25rem;
-    padding: 2rem;
+    grid-template-columns: 1fr 2fr;
+    padding: 1.5rem;
+    width: 100vw;
+    max-width: 1980px;
 }
 
 .header-bar {
@@ -12,12 +14,28 @@
 
 .content {
     padding: 0.5rem;
-    margin: 0.5rem;
+    margin: 0.25rem;
     overflow: hidden;
     border: 0.1rem dotted red;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1440px) {
+    .home {
+        grid-template-columns: 1fr 1.75fr;
+        padding: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 1280px) {
+    .home {
+        grid-template-columns: 1fr 1.5fr;
+        padding: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 991px) {
     .home {
         grid-template-columns: 1fr;
         padding: 1rem;

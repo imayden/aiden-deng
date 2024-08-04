@@ -4,12 +4,100 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
     padding: 0.5rem;
-    margin: 0.5rem;
+    margin: 0.25rem;
     border: 0.1rem dotted red;
 }
 
-@media screen and (max-width: 768px) {
+.header-bar-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    padding: 0.5rem;
 
+    .avatar-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100%;
+        max-width: 12rem;
+        max-height: 12rem;
+        overflow: hidden;
+        border-radius: 100%;
+        border: 1px solid rgba(0, 0, 0, 0.25);
+        margin-bottom: 1rem;
+        margin-top: 2rem;
+
+        .avatar {
+            min-width: 12rem;
+            min-height: 12rem;
+            transform: scale(1.05);
+            width: 12rem;
+            height: 12rem;
+            background-size: cover;
+            overflow: hidden;
+            background-image: url('https://raw.githubusercontent.com/imayden/Images-cdn-repo/main/aiden-deng/avatars/light-square.png');
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .avatar {
+                background-image: url('https://raw.githubusercontent.com/imayden/Images-cdn-repo/main/aiden-deng/avatars/dark-square.png');
+            }
+        }
+    }
+
+
+    .info-container {
+        text-align: start;
+
+        .name {
+            font-size: 2.15rem;
+            font-weight: 500;
+            margin-top: 1.5rem;
+            margin-bottom: 0;
+        }
+    
+        .tag {
+            font-size: 1.2rem;
+            margin-block: 0.5rem;
+        }
+
+    }
+
+    .actions {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: center;
+        margin-top: 1rem;
+        gap: 1rem;
+        
+        a {
+            text-decoration: none;
+        }
+    }
+
+    .contact-info{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        margin-top: 1rem;
+        gap: 0;
+    }
+
+}
+
+@media screen and (max-width: 991px) {
+    .header-bar-content {
+        align-items: center;
+        justify-content: center;
+
+        .info-container {
+            text-align: center;
+        }
+    }
 }
