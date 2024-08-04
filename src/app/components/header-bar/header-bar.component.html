@@ -7,7 +7,7 @@
             </div>
             <div class="info-container">
                 <h2 class="name">Aiden Deng</h2>
-                <p class="tag">6+ Years of Experience</p>
+                <p class="tag">{{yearOfExperience}}+ Years of Experience</p>
                 <p class="tag">Full-Stack Engineer</p>
                 <p class="tag">FUI/UX Designer</p>
                 <p class="tag">Angular · React · Node · Figma</p>
@@ -25,12 +25,21 @@
                     target="_blank">
                     Get My Resume</a>
             </div>
-    
+
             <div class="contact-info">
+                <!-- <p>My Time Zone: {{ today | date:'MMM d, yyyy, h:mm:ss a z' }} (EST)</p> -->
                 <a class="btn-link" style="font-size: 0.9rem;" href="mailto:aiden.y.deng@gmail.com" target="_blank">
                     Email: aiden.y.deng&commat;gmail.com </a>
                 <a class="btn-link" style="font-size: 0.9rem" href="tel:+17084749198">TEL: +1 708-474-9198</a>
                 <a class="btn-link" style="font-size: 0.9rem" href="sms:+17084749198">SMS: +1 708-474-9198</a>
+
+                <div class="real-time-clock">
+                    <p>
+                        {{ today | date:'MMM d, yyyy'}} 
+                        {{ today | date:'hh:mm'}} 
+                        {{ today | date:'a'}} 
+                        EST ({{ today | date:'z'}}) </p>
+                </div>
             </div>
 
         </div>

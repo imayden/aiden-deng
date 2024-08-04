@@ -6,19 +6,16 @@
     top: 0;
     bottom: 0;
     right: 0;
-    width: calc(100% - 31rem);
+    width: calc(100% - 33rem);
     padding: 1rem;
     margin: 1rem;
     position: fixed;
     border: 0.1rem dotted red;
     overflow: scroll;
 
-    // .spacer{
-    //     height: 8rem;
-    // }
-
     .feed-content {
-        background-color: cyan;
+        // background-color: cyan;
+        border: 0.1rem dotted blue;
         display: flex;
         flex-direction: column;
         align-items: center;
