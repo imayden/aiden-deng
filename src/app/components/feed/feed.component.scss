@@ -286,8 +286,7 @@
     background-image: url('https://raw.githubusercontent.com/imayden/Images-cdn-repo/main/aiden-deng/assests/wood.jpeg');
 
     .tile-content#timezone {
-        background: linear-gradient(#111, #333);
-        // box-shadow: 0 0 0.5rem rgba($color: #000, $alpha: 0.85);
+        background: linear-gradient(#222, #333, #444);
         color: white;
         font-size: 1.5rem;
         font-weight: 700;
@@ -298,7 +297,7 @@
 
         .clock{
             border: 0.5rem solid #080808;
-            background: linear-gradient(#151515, #101010);
+            background: linear-gradient(#696868,  #797673);
             width: 85%;
             height: 85%;
             border-radius: 1rem;
@@ -308,6 +307,7 @@
             align-items: center;
             justify-content: start;
 
+        
             .display {
                 display: flex;
                 flex-direction: column;
@@ -317,6 +317,7 @@
                 width: 90%;
                 height: 75%;
                 overflow: hidden;
+                border: 1px solid #57504b;
                 background-color: #7A8285;
                 border-radius: 0.15rem;
                 margin-top: 0.5rem;
@@ -338,50 +339,41 @@
                     transform: scale(0.8);
                 }
             }
-
             @media screen and (max-width: 1280px) {
                 .clock-display-content{
                     transform: scale(1.4);
                 }
             }
-
             @media screen and (max-width: 1145px) {
                 .clock-display-content{
                     transform: scale(1.1);
                 }
             }
-
             @media screen and (max-width: 1024px) {
                 .clock-display-content{
                     transform: scale(1);
                 }
             }
-
-
             @media screen and (max-width: 991px) {
                 .clock-display-content{
                     transform: scale(0.7);
                 }
             }
-            
             @media screen and (max-width: 767px) {
                 .clock-display-content{
                     transform: scale(1.2);
                 }
             }
-
             @media screen and (max-width: 600px) {
                 .clock-display-content{
                     transform: scale(1);
                 }
             }
-
             @media screen and (max-width: 500px) {
                 .clock-display-content{
                     transform: scale(0.8);
                 }
             }
-
             @media screen and (max-width: 440px) {
                 .clock-display-content{
                     transform: scale(0.7);
@@ -394,11 +386,19 @@
             }
 
             .clock-label{
-                color: #7A8285;
-                font-size: 1rem;
+                color: #2f3233;
+                font-size: 0.9rem;
                 margin:0;
                 padding: 0;
-                font-weight: 400;
+                font-weight: 5600;
+
+            }
+
+            @media (prefers-color-scheme: dark) {
+                .clock-label{
+                    color: #7A8285;
+                    
+                }
             }
 
             .clock-time{
@@ -446,5 +446,17 @@
             }
         }
 
+        @media (prefers-color-scheme: dark) {
+            .clock{
+                background: linear-gradient(#151515, #101010);
+            }
+        }
+
+    }
+
+    @media (prefers-color-scheme: dark) {
+        .tile-content#timezone {
+            background: linear-gradient(#181818, #222, #282828);
+        }
     }
 }
