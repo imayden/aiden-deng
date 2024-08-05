@@ -320,9 +320,15 @@
                 height: 75%;
                 overflow: hidden;
                 border: 1px solid #57504b;
-                background-color: #7A8285;
+                background-color: #a6b0b4;
                 border-radius: 0.15rem;
                 margin-top: 0.5rem;
+            }
+
+            @media (prefers-color-scheme: dark) {
+                .display {
+                    background-color: #7A8285;
+                }
             }
 
             .clock-display-content{
@@ -435,7 +441,7 @@
             }
 
             .clock-circle{
-                background-color: #646E6F;
+                // background-color: #646E6F;
                 border: 3px dotted #2B2D32;;
                 color: #2B2D32;
                 padding: 0.25rem;
