@@ -147,17 +147,17 @@
                             <div class="display">
                                 <div class="clock-display-content">
                                     <!-- <p class="clock-time">{{ today | date:'h:mm:ss a z' }} </p> -->
-                                    <p class="clock-date"> {{ today | date:'MMM d, yyyy' }}</p>
-                                    <p class="clock-time">{{ today | date:'h:mm' }} </p>
+                                    <p class="clock-date"> {{ currentDate }}</p>
+                                    <p class="clock-time">{{ currentTime }} </p>
                                     <div class="clock-others">
                                         <div class="clock-circle" id="seconds">
-                                            {{ today | date:'ss' }}
+                                            {{ currentSeconds }}
                                         </div>
                                         <div class="clock-circle" id="ampm">
-                                            {{ today | date:'a' }}
+                                            {{ currentDay }}
                                         </div>
                                         <div class="clock-circle" id="timezone">
-                                            EST
+                                            {{ timezoneName }}
                                         </div>
                                     </div>
 
