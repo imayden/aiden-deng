@@ -119,50 +119,7 @@
 
                     </div>
                 </div>
-
-
-
-                <!-- Time -->
-                <div class="tile" id="timezone" title="My Timezone ⏰">
-                    <div class="tile-content" id="timezone">
-                        <div class="clock">
-                            <div class="display">
-                                <div class="clock-display-content">
-                                    <!-- <p class="clock-time">{{ today | date:'h:mm:ss a z' }} </p> -->
-                                    <p class="clock-date"> {{ today | date:'MMM d, yyyy' }}</p>
-                                    <p class="clock-time">{{ today | date:'h:mm' }} </p>
-                                    <div class="clock-others">
-                                        <div class="clock-circle" id="seconds">
-                                            {{ today | date:'ss' }}
-                                        </div>
-                                        <div class="clock-circle" id="ampm">
-                                            {{ today | date:'a' }}
-                                        </div>
-                                        <div class="clock-circle" id="timezone">
-                                            EST
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <p class="clock-label">MY TIMEZONE</p>
-
-                        </div>
-
-                    </div>
-                </div>
-
-                <!-- Maps -->
-                <div class="tile" id="small" title="My Location 📍">
-                    <div class="tile-content">
-                        <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas"
-                            src="https://maps.google.com/maps?width=400&amp;height=400&amp;hl=en&amp;q=%20Mishawaka+(My%20Location)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
-                        <a href='https://www.versicherungen.at/cyber-versicherung/'></a>
-                        <script type='text/javascript'
-                            src='https://embedmaps.com/google-maps-authorization/script.js?id=19b3e6707b70b6e847bf0b0315ecd60890a5bb5d'></script>
-                    </div>
-                </div>
+、
 
                 <div class="tile" id="small">
                     <div class="tile-content" title="Book a Meetup 📅">
@@ -170,6 +127,50 @@
                         <p style="font-size: 1rem; margin: 0; padding: 0;;line-height: 1;">Cheers Mate!</p>
                     </div>
                 </div>
+
+                                <!-- Maps -->
+                                <div class="tile" id="small" title="My Location 📍">
+                                    <div class="tile-content">
+                                        <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas"
+                                            src="https://maps.google.com/maps?width=400&amp;height=400&amp;hl=en&amp;q=%20Mishawaka+(My%20Location)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                                        <a href='https://www.versicherungen.at/cyber-versicherung/'></a>
+                                        <script type='text/javascript'
+                                            src='https://embedmaps.com/google-maps-authorization/script.js?id=19b3e6707b70b6e847bf0b0315ecd60890a5bb5d'></script>
+                                    </div>
+                                </div>
+                
+                
+                                <!-- Time -->
+                                <div class="tile" id="timezone" title="My Timezone ⏰">
+                                    <div class="tile-content" id="timezone">
+                                        <div class="clock">
+                                            <div class="display">
+                                                <div class="clock-display-content">
+                                                    <!-- <p class="clock-time">{{ today | date:'h:mm:ss a z' }} </p> -->
+                                                    <p class="clock-date"> {{ today | date:'MMM d, yyyy' }}</p>
+                                                    <p class="clock-time">{{ today | date:'h:mm' }} </p>
+                                                    <div class="clock-others">
+                                                        <div class="clock-circle" id="seconds">
+                                                            {{ today | date:'ss' }}
+                                                        </div>
+                                                        <div class="clock-circle" id="ampm">
+                                                            {{ today | date:'a' }}
+                                                        </div>
+                                                        <div class="clock-circle" id="timezone">
+                                                            EST
+                                                        </div>
+                                                    </div>
+                
+                                                </div>
+                                            </div>
+                
+                                            <p class="clock-label">MY TIMEZONE</p>
+                
+                                        </div>
+                
+                                    </div>
+                                </div>
+                
 
             </div>
         </div>
