@@ -71,7 +71,7 @@
 
         .info-container {
             text-align: start;
-            margin-bottom: 10rem; // spacer
+            margin-bottom: 50rem; // spacer
 
             .name {
                 font-size: 2.15rem;
@@ -87,17 +87,48 @@
 
         }
 
+        @media screen and (max-height: 1440px) {
+            .info-container {
+                margin-bottom: 40rem;
+            }
+        }
+
+        @media screen and (max-height: 1280px) {
+            .info-container {
+                margin-bottom: 30rem;
+            }
+        }
+
+        @media screen and (max-height: 1145px) {
+            .info-container {
+                margin-bottom: 24rem;
+            }
+        }
+
+        @media screen and (max-height: 1024px) {
+            .info-container {
+                margin-bottom: 18rem;
+            }
+        }
+
         @media screen and (max-height: 960px) {
             .info-container {
-                margin-bottom: 6rem;
+                margin-bottom: 14rem;
+            }
+        }
+
+        @media screen and (max-height: 880px) {
+            .info-container {
+                margin-bottom: 10rem;
             }
         }
 
         @media screen and (max-height: 800px) {
             .info-container {
-                margin-bottom: 2rem;
+                margin-bottom: 6rem;
             }
         }
+
     }
 
 
