@@ -10,7 +10,9 @@
     padding: 1rem;
     margin: 1rem;
     overflow-y: auto;
-    height: 92.5vh;
+    overflow-x: hidden;
+    // height: 92.5vh;
+    height: 95vh;
     position: absolute;
     
     .tx {
