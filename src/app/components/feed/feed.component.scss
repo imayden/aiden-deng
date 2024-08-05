@@ -141,6 +141,49 @@
     }
 }
 
+.tile#big{
+    background-size: cover;
+
+    .tile-content#work {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: start;
+        width: 90%;
+        height: 90%;
+
+        .small-tx{
+            padding: 0;
+            font-size: 0.75rem;
+            line-height: 1;
+            line-height: 1.5;
+            font-weight: 100;
+            color: #000;
+            opacity: 0.75;
+            font-weight: bold;
+        }
+
+        .ext-link{
+            background-color: rgba($color: #fff, $alpha: 0.8);
+            border: 1px solid rgba($color: #888, $alpha: 0.5);
+            box-shadow: 0 0 0.5rem rgba($color: #888, $alpha: 0.25);
+            font-size: 0.75rem;
+            text-decoration: none;
+            color: rgba($color: #000, $alpha: 0.75);
+            backdrop-filter: blur(0.5rem);
+            transition: ease-in-out 0.2s all;
+            padding: 0.5rem 1rem;
+            border-radius: 10rem;
+            cursor: pointer;
+
+        }
+
+        .ext-link:hover{
+            background-color: rgba($color: #fff, $alpha: 0.9);
+            box-shadow: 0 0 0.5rem rgba($color: #888, $alpha: 0.5);
+        }
+    }
+}
 
 .tile#small{
     display: flex;
