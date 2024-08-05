@@ -34,8 +34,32 @@
 
                     </div>
                 </div>
-                <div class="tile" id="small" title="My Timezone ⏰">
-                    <div class="tile-content">
+                <div class="tile" id="timezone" title="My Timezone ⏰">
+                    <div class="tile-content" id="timezone">
+                        <div class="clock">
+                            <div class="display"> 
+                                <div class="clock-display-content">
+                                    <!-- <p class="clock-time">{{ today | date:'h:mm:ss a z' }} </p> -->
+                                    <p class="clock-date"> {{ today | date:'MMM d, yyyy' }}</p>
+                                    <p class="clock-time">{{ today | date:'h:mm' }} </p>
+                                    <div class="clock-others">
+                                        <div class="clock-circle" id="seconds">
+                                            {{ today | date:'ss' }}
+                                        </div>
+                                        <div class="clock-circle" id="ampm">
+                                            {{ today | date:'a' }}
+                                        </div>
+                                        <div class="clock-circle" id="timezone">
+                                            EST
+                                        </div>
+                                    </div>
+                                
+                                </div>
+                            </div>
+                            
+                            <p class="clock-label">MY TIMEZONE</p>
+
+                        </div>
 
                     </div>
                 </div>

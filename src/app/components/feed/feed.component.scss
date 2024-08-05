@@ -47,7 +47,8 @@
         .tile {
             aspect-ratio: 1 / 1;
             overflow: hidden;
-            border: 1px solid rgba($color: #888, $alpha: 0.5);
+            border: 1px solid rgba($color: #888, $alpha: 0.25);
+            box-shadow: 0 0 0.5rem rgba($color: #888, $alpha: 0.1);
             border-radius: 2rem;
             transition: ease-in-out 0.2s all;
             cursor: pointer;
@@ -88,7 +89,7 @@
             box-shadow: 0 0 0.75rem rgba($color: #888, $alpha: 0.5);
         }
 
-        @media screen and (max-width: 1080px) {
+        @media screen and (max-width: 1280px) {
             .grid#primary {
                 grid-template-columns: 1fr;
             }
@@ -140,3 +141,173 @@
     }
 }
 
+
+
+
+.tile#timezone {
+    background-size: cover;
+    background-image: url('https://raw.githubusercontent.com/imayden/Images-cdn-repo/main/aiden-deng/assests/wood.jpeg');
+
+    .tile-content#timezone {
+        background: linear-gradient(#111, #333);
+        // box-shadow: 0 0 0.5rem rgba($color: #000, $alpha: 0.85);
+        color: white;
+        font-size: 1.5rem;
+        font-weight: 700;
+        text-align: center;
+        width: 90%;
+        height: 90%;
+        border-radius: 1.35rem;
+
+        .clock{
+            border: 0.5rem solid #080808;
+            background: linear-gradient(#151515, #101010);
+            width: 85%;
+            height: 85%;
+            border-radius: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            align-items: center;
+            justify-content: start;
+
+            .display {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: start;
+                gap:0;
+                width: 90%;
+                height: 75%;
+                overflow: hidden;
+                background-color: #7A8285;
+                border-radius: 0.15rem;
+                margin-top: 0.5rem;
+            }
+
+            .clock-display-content{
+                width: 100%;
+                height: 100%;
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap:0;
+            }
+
+            @media screen and (max-width: 1440px) {
+                .clock-display-content{
+                    transform: scale(0.8);
+                }
+            }
+
+            @media screen and (max-width: 1280px) {
+                .clock-display-content{
+                    transform: scale(1.4);
+                }
+            }
+
+            @media screen and (max-width: 1145px) {
+                .clock-display-content{
+                    transform: scale(1.1);
+                }
+            }
+
+            @media screen and (max-width: 1024px) {
+                .clock-display-content{
+                    transform: scale(1);
+                }
+            }
+
+
+            @media screen and (max-width: 991px) {
+                .clock-display-content{
+                    transform: scale(0.7);
+                }
+            }
+            
+            @media screen and (max-width: 767px) {
+                .clock-display-content{
+                    transform: scale(1.2);
+                }
+            }
+
+            @media screen and (max-width: 600px) {
+                .clock-display-content{
+                    transform: scale(1);
+                }
+            }
+
+            @media screen and (max-width: 500px) {
+                .clock-display-content{
+                    transform: scale(0.8);
+                }
+            }
+
+            @media screen and (max-width: 440px) {
+                .clock-display-content{
+                    transform: scale(0.7);
+                }
+            }
+            @media screen and (max-width: 400px) {
+                .clock-display-content{
+                    transform: scale(0.5);
+                }
+            }
+
+            .clock-label{
+                color: #7A8285;
+                font-size: 1rem;
+                margin:0;
+                padding: 0;
+                font-weight: 400;
+            }
+
+            .clock-time{
+                color: #2B2D32;
+                font-size: 2.5rem;
+                margin:0;
+                padding: 0;
+                line-height: 2.5rem;
+            }
+
+            .clock-date{
+                color: #7A8285;
+                background-color: #2B2D32;
+                font-size: 0.75rem;
+                margin:0;
+                margin-bottom: 0.2rem;
+                padding-block: 0.1rem;
+                padding-inline: 1rem;
+                border-radius: 10rem;
+                font-weight: 100;
+                text-transform: uppercase;
+            }
+
+            .clock-others{
+                margin-top: 0.5rem;
+                display: flex;
+                flex-direction: row;
+                gap: 0.5rem;
+                align-items: center;
+                justify-content: space-between;
+                font-size: 0.9rem;
+            }
+
+            .clock-circle{
+                background-color: #646E6F;
+                border: 3px dotted #2B2D32;;
+                color: #2B2D32;
+                padding: 0.25rem;
+                border-radius: 100%;
+                width: 1.75rem;
+                height: 1.75rem;
+                display: flex;
+                align-items: center;
+                justify-content: center; 
+            }
+        }
+
+    }
+}
