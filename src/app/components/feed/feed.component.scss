@@ -60,7 +60,7 @@
             height: 100%;
 
             .tile-content {
-                overflow: hidden;
+                // overflow: hidden;
                 aspect-ratio: 1 / 1;
 
                 display: flex;
@@ -165,8 +165,8 @@
             border-radius: 0.8rem;
             overflow: hidden;
             aspect-ratio: 1/1;
-            border: 1px solid rgba($color: #888, $alpha: 0.25);
-            box-shadow: 0 0 0.5rem rgba($color: #888, $alpha: 0.1);
+            // border: 1px solid rgba($color: #888, $alpha: 0.25);
+            box-shadow: 0 0 0.5rem rgba($color: #888, $alpha: 0.5);
 
             display: flex;
             align-items: center;
@@ -190,18 +190,39 @@
 
         
 
-        .p-btn#email{
+        .p-btn{
             font-size: 0.75rem;
             padding: 0.5rem 1rem;
-            background-color: #3367d6;
             border-radius: 10rem;
             transition: ease-in-out 0.2s all;
             color:white;
             text-decoration: none;
         }
 
+        .p-btn#email{
+            background-color: #3367d6;
+        }
+
         .p-btn#email:hover{
             background-color: #2a5cb8;
+        }
+
+        .p-btn#cv{
+            background-color: #6659E3;
+        }
+
+        .p-btn#cv:hover{
+            background-color: #4d43b4;
+        }
+   
+
+
+        .p-btn#sms, .p-btn#tel{
+            background-color: #0EBE2C;
+        }
+
+        .p-btn#sms:hover, .p-btn#tel:hover{
+            background-color: #079414;
         }
     }
     
