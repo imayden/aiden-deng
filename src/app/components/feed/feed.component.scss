@@ -65,6 +65,11 @@
             box-shadow: 0 0 0.75rem rgba($color: #888, $alpha: 0.25);
         }
 
+        .tile:active {
+            transform: scale(0.95);
+            box-shadow: 0 0 0.75rem rgba($color: #888, $alpha: 0.5);
+        }
+
         @media screen and (max-width: 1080px) {
             .grid#primary {
                 grid-template-columns: 1fr;
