@@ -17,7 +17,7 @@ export class FeedComponent implements OnInit, OnDestroy {
   currentDay: string = '';
   timeZone: string = ''; // Default time zone
   timezoneName: string = '';
-  selectedTimezone: 'EST' | 'CST' | 'PST' | 'MST'  = 'EST';
+  selectedTimezone: 'EST' | 'CST' | 'PST' | 'MST'  = 'CST';
 
 
   constructor(private sharedService: SharedService) { }
